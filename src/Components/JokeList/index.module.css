@@ -1,0 +1,37 @@
+.jokeListSection {
+  border-radius: 25px;
+
+  font-family: "Trebuchet MS";
+  line-height: 2rem;
+}
+
+.saveButton {
+  background-color: rgb(225, 232, 245);
+  box-shadow: 0px 1px 2px 1px rgb(78, 78, 78);
+
+  padding: 10px;
+  font-family: "Trebuchet MS";
+  padding: 7px;
+  border-radius: 27px;
+
+  margin: 3px;
+}
+
+.saveButton:hover {
+  background-color: rgb(158, 251, 158);
+  box-shadow: 0px 2px 5px 2px rgba(63, 170, 129, 0.836);
+
+  font-family: "Trebuchet MS";
+  padding: 12px;
+  border-radius: 27px;
+
+  margin: 3px;
+}
+
+.listDark {
+  color: white;
+}
+
+.listLight {
+  color: black;
+}
