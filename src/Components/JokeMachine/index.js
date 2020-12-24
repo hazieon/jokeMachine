@@ -29,7 +29,7 @@ function JokeMachine({ dark }) {
           className={css.refreshButton}
           onClick={() => setDataObj({ joke: "[no joke yet]" })}
         >
-          Remove
+          Clear ✂
         </button>
         <button
           className={css.jokeButton}
@@ -37,7 +37,7 @@ function JokeMachine({ dark }) {
             getJoke();
           }}
         >
-          Get Joke!
+          Get Joke! 👍
         </button>
       </div>
       <JokeList dark={dark} jokeItem={dataObj} />

@@ -9,7 +9,7 @@ function App() {
       <header className={dark ? css.AppHeader : css.AppHeaderLight}>
         <div className={css.AppMode}>
           <button className={css.toggleTheme} onClick={() => setDark(!dark)}>
-            {dark ? "light" : "dark"}
+            {dark ? "light 🌞" : "dark 🌙"}
           </button>
         </div>
         <JokeMachine dark={dark} />

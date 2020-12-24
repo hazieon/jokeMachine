@@ -9,6 +9,11 @@ function JokeList({ jokeItem, dark }) {
     setList([...list, jokeItem.joke]);
   }
 
+  function delJoke(i){
+    console.log(i)
+       setList([...list.splice(0,i), ...list.splice(i+1)]);
+  }
+
   return (
     <div className={css.jokeListSection}>
       <button className={css.saveButton} onClick={saveJoke}>
@@ -16,7 +21,7 @@ function JokeList({ jokeItem, dark }) {
       </button>
       <ul className={dark ? css.listDark : css.listLight}>
         {list.map((x, i) => (
-          <li className={i}>{list[i]}</li>
+          <li>{list[i]}<button className={css.delete} onClick={()=>delJoke(i)}>✖</button></li>
         ))}
       </ul>
     </div>

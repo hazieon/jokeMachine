@@ -7,7 +7,7 @@ function JokeViewer({ jokeObj }) {
   return (
     <>
       <section className={css.jokePanel}>
-      <img src={dod} alt="dod" />
+      <img className={css.image} src={dod}  alt="dod" />
         <h3 className={css.jokeText}>{joke}</h3>
       </section>
     </>
